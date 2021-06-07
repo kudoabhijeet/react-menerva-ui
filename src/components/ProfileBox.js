@@ -10,13 +10,15 @@ function ProfileBox() {
         studentName: "Abhijeet Prasad",
         studentCount: "125 Students",
         activityName: "Upcoming <Activity>",
+        date: "Thu, 25th May"
+               
     };
 
     return (
-        <Box w={"380px"}  borderWidth="1px" borderRadius="lg" overflow="hidden">
+        <Box m={2} bgColor="gray.200" w={"380px"}  borderWidth="1px" borderRadius="lg" overflow="hidden">
             
-            <Box p={4}>
-                <HStack spacing="90px">
+            <Box p={3}>
+                <HStack spacing="165px" >
                 <Box
                     mt="2"
                     fontWeight="bold"
@@ -27,12 +29,12 @@ function ProfileBox() {
                     {property.title}
                        
                 </Box>
-                <Icon  as={AiOutlineEdit} />
+                <Icon as={AiOutlineEdit} />
                 </HStack>
             </Box>
 
                 <Box px={6} paddingBottom={2}>
-                <HStack spacing="100px">
+                <HStack spacing="180px">
                     <Box as="span" fontSize="sm">
                         <Avatar
                             p={3}
@@ -59,7 +61,7 @@ function ProfileBox() {
                 </Box>
 
                 <Box px={6} paddingBottom={2} fontSize="sm" >
-                    <HStack spacing="90px">
+                    <HStack spacing="110px">
                     <Box as="span">
                         <Avatar
                             size="sm"
@@ -72,6 +74,15 @@ function ProfileBox() {
                          View
                     </Button>
                     </HStack>
+                    <Box as="span" fontWeight="semibold" px={10} fontSize="xs">
+                    {property.date}
+                    {" "}
+                    </Box>
+                    <br/>
+                    <Box as="span" fontWeight="semibold"  px={10} fontSize="xs">
+                    {"12:00PM- 12:00PM"}
+                    
+                    </Box>
                 </Box>
             
         </Box>
