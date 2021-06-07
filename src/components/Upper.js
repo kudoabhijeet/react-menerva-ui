@@ -1,16 +1,18 @@
 import React from "react";
 import ProfileBox from './ProfileBox'
 import HomeworkStatus from './HomeworkStatus'
-import { HStack} from "@chakra-ui/react";
+import { HStack, Container} from "@chakra-ui/react";
 
 
 function Upper() {
     
     return (
-        <HStack m={4}>
+        <Container maxW="xl" centerContent>
+        <HStack m={4} alignItems="center">
         <ProfileBox/>
         <HomeworkStatus/>   
         </HStack>
+        </Container>
     );
 }
 export default Upper;

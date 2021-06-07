@@ -30,7 +30,7 @@ function HomeworkStatus() {
                     <Text fontSize="sm" >
                         Tests
                     </Text>
-                    <CircularProgress thickness="15px" value={90} size="120px" >
+                    <CircularProgress  thickness="15px" value={90} size="120px" >
                     <CircularProgressLabel fontSize="sm">90%</CircularProgressLabel>
                     </CircularProgress>
                     <Text fontSize="xs" align="center" >
