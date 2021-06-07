@@ -1,9 +1,9 @@
 import React from 'react';
-import ProfileBox from './components/ProfileBox'
+import Upper from './components/Upper'
 function App() {
   return (
-    <ProfileBox/>
+    
+    <Upper/>
   );
 }
-
 export default App;
